@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgray;
+  font-family: "Microsoft JhengHei";
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+form {
+  width: 600px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+fieldset {
+  border-radius: 8px;
+}
+
+fieldset:hover {
+  border: 1px solid #6699cc;
+}
+
+#moreinfo {
+  width: 200px;
+  height: 100px;
+  /* 加入浮動連動背景圖*/
+  background-image: url("img/moreinfo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
+#question {
+  display: none;
+}
+
+.q0 {
+  border: 0.5px solid black;
+  border-radius: 10px;
+
+  /* margin-top don't work by display */
+  display: inline-block;
+  margin: 5px 0px;
+  padding: 2px 10px;
+}
+
+.q {
+  border: 0.5px solid black;
+  border-radius: 10px;
+
+  /* margin-top don't work by display */
+  display: inline-block;
+  margin: 5px 0px;
+  padding: 2px 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:hover + .q,
+input[type="radio"]:hover + .q0 {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input[type="radio"]:checked + .q,
+input[type="radio"]:checked + .q0 {
+  background-color: gray;
+  color: white;
+}
+
+input[type="button"] {
+  border-radius: 8px;
+  margin: 25px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+input[type="button"]:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#result {
+  display: none;
+  border: 1px solid black;
+  width: 600px;
+  margin: 0px auto;
+  padding: 20px 10px;
+  border-radius: 8px;
+}

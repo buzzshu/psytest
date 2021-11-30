@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心理測驗</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="func.js" charset="UTF-8"></script>
+</head>
+<body>
+    <h1>準到哭！！！答案秒測出你的「隱藏個性」</h1>
+    <div>
+        <!-- 再檢查action的功能 -->
+        <form id="basicinfo"> 
+            <fieldset>
+                <legend>基本資料</legend>
+                <label for="userID">姓名：</label><input type="text" id="userID"><br>
+
+                <label>性別：</label>
+                <input type="radio" id="sex1" name="sex">
+                <label for="sex1" class="q0">生理男</label>
+                <input type="radio" id="sex2" name="sex">
+                <label for="sex2" class="q0">生理女</label><br>
+
+                <label>年齡：</label>
+                <input type="radio" id="age1" name="age">
+                <label for="age1" class="q0">20以下</label>
+                <input type="radio" id="age2" name="age">
+                <label for="age2" class="q0">20-29</label>
+                <input type="radio" id="age3" name="age">
+                <label for="age3" class="q0">30-39</label>
+                <input type="radio" id="age4" name="age">
+                <label for="age4" class="q0">40以上</label><br>
+            </fieldset>
+
+            <input type="button" value="點擊開始測驗！" onclick="onques();"><br>
+
+        </form>
+
+        <form id="question">
+            <fieldset class="question">
+                <legend>Q1</legend>
+                <p>在你準備進電梯時，電梯門正好在你眼前關上，沒辦法只好等下一趟了。在等待的過程中，你通常會做什麼？</p>
+                <input type="radio" id="q1_1" name="q1" class="ques">
+                <label for="q1_1" class="q">一直盯著電梯的按鈕，並且按了好幾次</label><br>
+                <input type="radio" id="q1_2" name="q1" class="ques">
+                <label for="q1_2" class="q">腳踏來踏去，不停地發出聲響</label><br>
+                <input type="radio" id="q1_3" name="q1" class="ques">
+                <label for="q1_3" class="q">朝上看，或是看周圍的告示板</label><br>
+                <input type="radio" id="q1_4" name="q1" class="ques">
+                <label for="q1_4" class="q">向下看</label><br>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>Q2</legend>
+                <p>如果你了有男女朋友，你覺得下面哪件事會是你們最喜歡做的事？</p>
+                <input type="radio" id="q2_1" name="q2" class="ques">
+                <label for="q2_1" class="q">一起到沙灘漫步</label><br>
+                <input type="radio" id="q2_2" name="q2" class="ques">
+                <label for="q2_2" class="q">一起逛街買東西</label><br>
+                <input type="radio" id="q2_3" name="q2" class="ques">
+                <label for="q2_3" class="q">一起到咖啡廳喝下午茶</label><br>
+                <input type="radio" id="q2_4" name="q2" class="ques">
+                <label for="q2_4" class="q">一起聊天或是看電影</label><br>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>Q3</legend>
+                <p>有一天你走在街上看到一間寺廟，你的直覺是?</p>
+                <input type="radio" id="q3_1" name="q3" class="ques">
+                <label for="q3_1" class="q">非常華麗金光閃閃的大廟</label><br>
+                <input type="radio" id="q3_2" name="q3" class="ques">
+                <label for="q3_2" class="q">很莊嚴肅穆的中廟</label><br>
+                <input type="radio" id="q3_3" name="q3" class="ques">
+                <label for="q3_3" class="q">有一個師父和小和尚的小廟</label><br>
+                <input type="radio" id="q3_4" name="q3" class="ques">
+                <label for="q3_4" class="q">古時候遺留下來的古跡</label><br>
+            </fieldset>
+            
+            <fieldset class="question">
+                <legend>Q4</legend>
+                <p>你最喜歡的水果是?</p>
+                <input type="radio" id="q4_1" name="q4" value="芒果" class="ques">
+                <label for="q4_1" class="q">芒果</label><br>
+                <input type="radio" id="q4_2" name="q4" value="香蕉" class="ques">
+                <label for="q4_2" class="q">香蕉</label><br>
+                <input type="radio" id="q4_3" name="q4" value="西瓜" class="ques">
+                <label for="q4_3" class="q">西瓜</label><br>
+                <input type="radio" id="q4_4" name="q4" value="葡萄" class="ques">
+                <label for="q4_4" class="q">葡萄</label><br>
+            </fieldset>
+
+            <input type="button" value="快來看結果！" onclick="showFruit();"><br>
+        </form>
+    </div>
+
+    <div id="result">
+        <!--result-->
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=F109pTj0hgE" target="_blank"><div id="moreinfo"></div></a>
+</body>
+</html>
