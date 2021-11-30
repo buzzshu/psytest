@@ -22,24 +22,31 @@ form {
   padding: 5px;
 }
 
+legend {
+  font-size: 20px;
+}
+
 fieldset {
   border-radius: 8px;
+  border: 4px solid #dcdcdc;
 }
 
 fieldset:hover {
-  border: 1px solid #6699cc;
+  border: 4px solid rgba(0, 0, 0, 0.3);
 }
 
 #moreinfo {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   /* 加入浮動連動背景圖*/
-  background-image: url("img/moreinfo.png");
+  background-image: url("img/info.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   right: 0px;
   bottom: 0px;
+
+  display: none;
 }
 
 #question {
@@ -47,7 +54,7 @@ fieldset:hover {
 }
 
 .q0 {
-  border: 0.5px solid black;
+  border: 2px solid #dcdcdc;
   border-radius: 10px;
 
   /* margin-top don't work by display */
@@ -57,7 +64,7 @@ fieldset:hover {
 }
 
 .q {
-  border: 0.5px solid black;
+  border: 2px solid #dcdcdc;
   border-radius: 10px;
 
   /* margin-top don't work by display */
@@ -95,7 +102,7 @@ input[type="button"]:hover {
 
 #result {
   display: none;
-  border: 1px solid black;
+  border: 4px solid #dcdcdc;
   width: 600px;
   margin: 0px auto;
   padding: 20px 10px;
